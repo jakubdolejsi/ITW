@@ -1,3 +1,52 @@
 table, th, td {
     border: 1px solid black;
 }
+h1{
+    font-family: Arial, serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#title {
+    font-style: italic;
+    color: white;
+    font-size: 55px;
+    margin: 0 0 ;
+
+}
+
+#secondTitle{
+    color:  #d5a17c;
+    margin-top: -2px;
+    font-size: 25px;
+}
+#vertlist{
+    color: white;
+}
+
+.content{
+
+}
+
+.footer{
+
+}
+.menu{
+    color: white;
+    margin-right: 5px;
+
+}
+
+ul.vertlist li {
+    display: inline-block;
+}
+
+#topBackground{
+    background-image: url("../static/bg.jpg");
+}
+
+#about {
+    color: #b15e23 ;
+}
