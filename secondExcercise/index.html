@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs-cz">
 <head>
     <meta charset="UTF-8">
     <title> ITW - tvorba webových stránek</title>
@@ -49,8 +49,8 @@
     </div>
 </div>
 <div class="marginPage">
-    <div id="firstLecture">
-        <h2 id="lectures">Přednášky</h2>
+    <div class="lecture">
+        <h2 class="lectures">Přednášky</h2>
         <p>
             <img alt="" src="icons/icon1.gif">
         </p>
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div id="secondLecture">
+    <div class="lecture">
         <p>
             <img alt="" src="icons/icon2.gif">
         </p>
@@ -78,7 +78,7 @@
         </div>
     </div>
 
-    <div id="thirdLecture">
+    <div class="lecture">
         <p>
             <img alt="" src="icons/icon3.gif">
         </p>
@@ -92,7 +92,7 @@
         </div>
     </div>
 
-    <div id="fourthLecture">
+    <div class="lecture">
         <p>
             <img alt="" src="icons/icon4.gif">
         </p>
@@ -108,46 +108,46 @@
     </div>
 
 
-    <h2 id="preview">Přehled výsledků</h2>
+    <h2 class="lectures">Přehled výsledků</h2>
     <table>
         <tr class="brownTable">
-            <td colspan="4" rowspan="3">Jmeno</td>
-            <td colspan="9">Body</td>
+            <td colspan="1" rowspan="3">Jmeno</td>
+            <td colspan="6">Body</td>
         </tr>
         <tr class="brownTable">
-            <td colspan="3">2010</td>
-            <td colspan="3">2011</td>
-            <td colspan="3">2012</td>
+            <td colspan="2">2010</td>
+            <td colspan="2">2011</td>
+            <td colspan="2">2012</td>
         </tr>
         <tr class="brownTable">
-            <td colspan="2">Pulsem.</td>
+            <td >Pulsem.</td>
             <td>Zk.</td>
-            <td colspan="2">Pulsem.</td>
+            <td >Pulsem.</td>
             <td>Zk.</td>
-            <td colspan="2">Pulsem.</td>
+            <td >Pulsem.</td>
             <td>Zk.</td>
         </tr>
         <tr class="namesBorder">
-            <td class="names" colspan="4">Jan Novak</td>
-            <td colspan="2">18</td>
+            <td class="names">Jan Novak</td>
+            <td>18</td>
             <td>72</td>
-            <td colspan="2">20</td>
+            <td>20</td>
             <td>80</td>
-            <td colspan="2">10</td>
+            <td>10</td>
             <td>-</td>
         </tr>
         <tr class="namesBorder">
-            <td class="names" colspan="4">Zuzana Cerna</td>
-            <td colspan="2">10</td>
+            <td class="names">Zuzana Cerna</td>
+            <td>10</td>
             <td>50</td>
-            <td colspan="2">20</td>
+            <td>20</td>
             <td>75</td>
-            <td colspan="2">25</td>
+            <td>25</td>
             <td>99</td>
         </tr>
     </table>
 
-    <h2 id="exercise">Cvičení</h2>
+    <h2>Cvičení</h2>
     <div class="excercise">
         <h4><a href="https://www.fit.vutbr.cz/study/courses/ITW/private/cviceni/#c1">DNS a HTTP</a></h4>
         <div>
@@ -194,21 +194,29 @@
     <div class="marginPage">
         <h2 class="footH2" id="contact">Kontaktujte nás</h2>
         <dl>
+            <dt>
+                Garant:
+            </dt>
             <dd>
-                Garant: <a href="itw-garant@fit.vutbr.cz"> itw-garant@fit.vutbr.cz</a>
+                <a href="itw-garant@fit.vutbr.cz"> itw-garant@fit.vutbr.cz</a>
             </dd>
+            <dt>
+                Přednášející:
+            </dt>
             <dd>
-                Přednášející: <a href="itw-prednasejici@fit.vutbr.cz">itw-prednasejici@fit.vutbr.cz</a>
+                <a href="itw-prednasejici@fit.vutbr.cz">itw-prednasejici@fit.vutbr.cz</a>
             </dd>
+            <dt>
+                Cvičící:
+            </dt>
             <dd>
-                Cvičící: <a href="itw-cvicici@fit.vutbr.cz">itw-cvicici@fit.vutbr.cz</a>
+                <a href="itw-cvicici@fit.vutbr.cz">itw-cvicici@fit.vutbr.cz</a>
             </dd>
-            <dd>
-                <div>
-                    All Rights Reserved 2013 ITW Team
-                </div>
-            </dd>
+
         </dl>
+        <div id="rights">
+            All Rights Reserved 2013 ITW Team
+        </div>
         <h2 class="footH2" id="other">Související předměty</h2>
         <ul>
             <li>
