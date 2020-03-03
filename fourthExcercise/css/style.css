@@ -1,0 +1,293 @@
+body {
+    margin: 0 0 0 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 3px solid black;
+}
+
+th {
+    font-style: normal;
+}
+
+.names {
+    text-align: start;
+}
+
+
+.namesBorder td {
+    border-top: 2px solid black;
+    border-bottom: 2px solid rgba(175, 175, 175, 0.17);
+}
+
+.brownTable {
+    background: #d5a17c;
+}
+
+.brownTable td, th {
+    border-bottom: 2px solid black;
+    border-left: 2px dotted black;
+    border-right: 2px solid black;
+    border-top: 2px dotted black;
+}
+
+
+h2 {
+    color: #b15e23;
+    font-size: larger;
+}
+
+h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul.vertlist li {
+    display: inline-block;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px dotted #d5a17c;
+    color: #d5a17c;
+    height: 1px;
+}
+
+#title {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 47px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0.5em;
+}
+
+#secondTitle {
+    color: #d5a17c;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 2.8em;
+    font-family: Helvetica, sans-serif;
+}
+
+.vertlist {
+    display: inline;
+    margin-left: -2.4em;
+    margin-right: 0;
+}
+
+
+.menu {
+    color: white;
+    margin-right: 1.5em;
+    padding-bottom: 15px;
+    font-size: 16px;
+
+}
+
+.menu:hover {
+    background-image: url("../static/menu_bullet.gif");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 1.3em;
+
+
+}
+
+#topBackground {
+    background-image: url("../static/bg.jpg");
+    background-repeat: repeat-x;
+    padding-bottom: 3em;
+    background-color: #E3E3E3;
+}
+
+#about {
+    color: #b15e23;
+    margin-top: 1.3em;
+}
+
+.marginPage {
+    margin-left: 20em;
+    margin-right: 20em;
+    max-width: 960px;
+}
+
+.marginTop {
+    margin-left: 20em;
+    max-height: 280px;
+    max-width: 960px;
+
+}
+
+.footH2 {
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-image: url("../static/footer_bg.gif");
+    /*margin-top: 2em;*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+dl {
+    min-width: 400px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dd {
+    color: white;
+    text-align: right;
+    min-width: 1em;
+    margin-right: 23%;
+    padding-bottom: 0.5em;
+}
+
+
+dd a {
+    color: #d5a17c
+}
+
+dt {
+    color: white;
+    text-align: left;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 0.5em;
+}
+
+li a {
+    color: #d5a17c;
+}
+
+li {
+    list-style-image: url('../static/footer_list_bullet.gif');
+    margin-left: -1em;
+    padding: 0.3em 0 0 0.5em;
+}
+
+ul {
+    margin-top: -15px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lectures {
+    margin-top: 0.1em;
+    margin-bottom: 0;
+}
+
+.newspaper {
+    margin-right: 1em;
+}
+
+#rights {
+    color: white;
+}
+
+h4 a {
+    font-weight: bolder;
+}
+
+#aboutParagraph {
+    /*word-break: break-all;*/
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    /*max-height: available;*/
+}
+
+#left {
+    flex: 0 0 58%;
+    margin-right: 0.5em;
+    margin-top: 1em;
+}
+
+#right {
+    flex: 0 0 40%;
+    margin-left: 0.5em;
+}
+
+#leftFooter {
+    flex: 0 0 10%;
+}
+
+#rightFooter {
+    flex: 0 0 30%;
+}
+
+#insideLeft {
+    flex: 0 0 50%;
+}
+
+#insideRight {
+    flex: 0 0 50%;
+}
+
+#ex {
+    background: rgb(227,227,227);
+    background: linear-gradient(90deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 100%);
+
+}
+
+img {
+    float: left;
+    width: 4em;
+}
+
+p img {
+    margin-bottom: 2em;
+}
+.ltext {
+    display: block;
+}
+
+.lecture {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.excercise {
+    margin-top: 1em;
+    margin-left: 2em;
+    padding-bottom: 1em;
+}
+
+
+#civc {
+    padding-top: 1em;
+    margin-left: 1.5em;
+}
+
+dd {
+    margin-bottom: 0;
+}
+
+dt {
+  margin-bottom: 0;
+}
+
