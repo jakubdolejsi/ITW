@@ -22,7 +22,9 @@ th {
 .brownTable {
     background: #d5a17c;
 }
-
+body{
+    margin: 0 0 0 0;
+}
 .brownTable td, th {
     border-bottom: 2px solid black;
     border-left: 2px dotted black;
@@ -122,6 +124,7 @@ footer{
     background-image: url("../static/footer_bg.gif");
     margin-top: 2em;
     padding-top: 0.5em;
+    margin-bottom: 0;
 }
 
 dd {
