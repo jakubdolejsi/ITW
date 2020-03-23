@@ -78,18 +78,18 @@ h1, h2, h3 {
 }
 
 /* pokud je velikost prohlizece mensi nez 1050px */
-@media (max-width: 1050px) {
+@media only screen and (max-width: 1050px) {
+    #section-about {
+        height: auto!important;
+    }
     #section-about .content{
-        padding-top: 10vh;
-        /*display: flex;*/
-        flex-direction: row;
-        margin-bottom: 20vh;
-        color: #868e96;
+        flex-direction: column!important;
+        margin-bottom: 0!important;
+        }
+    .descript {
+        padding-left: 30px!important;
     }
-    #section-about img {
-        height: 30%;
-        width: 30%;
-    }
+
 }
 #section-about .content{
     padding-top: 10vh;
@@ -105,14 +105,11 @@ h1, h2, h3 {
 
 .descript {
     font-size: 16px;
-    flex: 1;
     text-align: left;
     letter-spacing: 0.1em;
-    /*display: flex;*/
     flex-direction: column;
     min-width: 350px;
     width: inherit;
-
 }
 
 .descript h2 {
@@ -120,23 +117,19 @@ h1, h2, h3 {
     width: 7em;
     font-size: 32px;
     letter-spacing: .2em;
-    flex: 0 0 10%;
     padding-bottom: 10px;
 }
 .descript p {
-    flex: 0 0 33%;
     width: 290px;
     padding-bottom: 5px;
 
 }
 .descript p:last-child {
-    flex: 0 0 33%;
     width: 290px;
     padding-top: 40px;
 
 }
 .descript p .linkdown {
-    flex: 0 0 10%;
 }
 
 .card-img-top
@@ -211,8 +204,23 @@ h1, h2, h3 {
     flex: 1;
 }
 
+@media screen and (max-width: 1050px ){
+    #section-menu .menucols {
+        flex-direction: column!important;
+    }
+    #section-menu .menuitem {
+        flex: 1!important;
+    }
+    .price {
+        text-align: left!important;
+    }
+    #section-menu ul {
+        margin: 0;
+    }
+}
 #section-menu .menucols {
     flex: 1;
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
 
@@ -360,7 +368,6 @@ blockquote:before{
 
 #section-taste  h2 {
     align-self: center;
-    /*max-width: 50%;*/
     font-size: 62px;
     font-family: 'Montserrat', sans-serif;
 
@@ -378,11 +385,9 @@ blockquote:before{
 
 #section-events {
     background: #ffffff;
-    min-height: 70vh;
-    height: 70vh;
+    height: 850px;
     display: flex;
     align-items: center;
-    /*padding-top: 5em;*/
 }
 
 #section-events .content {
@@ -401,6 +406,7 @@ blockquote:before{
     flex: 1;
 }
 
+
 #section-events .card-deck {
     flex: 3;
     display: flex;
@@ -414,6 +420,22 @@ blockquote:before{
     background: #faf4ff;
     margin: 5px;
     padding-bottom: 5em;
+}
+
+
+@media screen and (max-width: 1050px){
+    #section-events {
+        height: 1200px;
+    }
+    .card {
+        flex: none;
+        width: 250px;
+        height: 420px;
+    }
+    #section-events .card-deck {
+        flex-wrap: wrap;
+        width: 600px;
+    }
 }
 .card-img-top {
 }
@@ -435,7 +457,7 @@ blockquote:before{
 }
 
 #footer {
-    height: 30vh;
+    height: 300px;
     background: #ffffff;
 }
 
@@ -457,4 +479,3 @@ blockquote:before{
     text-decoration: none;
     color:  #868e96;
 }
-
