@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, sans-serif;
+    background: #ebe5ff;
+}
+header {
+    background: rgb(156,94,44);
+    color: #eeeaf9;
+    text-align: center;
+    flex: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+}
+nav {
+    width: 15rem;
+    white-space: nowrap;
+    background: rgb(156,94,44);
+    background: linear-gradient(180deg, rgba(156,94,44,1) 35%, rgba(103,20,179,1) 100%);
+    background-attachment: fixed;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1px 0;
+}
+/* Only stick if you can fit */
+@media (min-width: 300px) {
+    nav ul {
+        position: sticky;
+        top: 6.5vh;
+    }
+}
+@media screen and (min-width: 600px){
+    #menuLinks {
+        display: block!important;
+    }
+}
+
+@media (max-width: 600px) {
+    #main {
+        flex-direction: column!important;
+    }
+    nav {
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    #portrait {
+        width: 30% !important;
+    }
+    footer {
+        height: 3em;
+    }
+    footer h1 {
+        margin: 0;
+    }
+    li:hover {
+        background: #b9c1ff!important;
+        cursor: pointer;
+    }
+    .active {
+        background: #EBE5FF !important;
+        color: black;
+    }
+    .content {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #menuLinks {
+        display: none;
+    }
+    #bars {
+        display: flex!important;
+    }
+    .ico {
+        width: 50px!important;
+        height: 50px!important;
+    }
+
+}
+nav ul li a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 0 0 1rem;
+    color: #e4e4f4;
+    text-decoration: none;
+}
+
+
+nav ul li a.current {
+    background: black;
+}
+
+nav li a {
+    justify-content: space-between;
+    display: flex!important;
+}
+nav li {
+    /*justify-content: space-between;*/
+    /*display: flex;*/
+}
+
+footer {
+    color: #eeeaf9;
+    text-align: center;
+    flex: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+    background: #607D8B;
+}
+
+.active {
+    background: #ebe5ff;
+    color: black;
+}
+
+.activeText {
+    color: black;
+}
+
+.page {
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+}
+#main {
+    flex: 1;
+    display: flex;
+}
+
+#firstName {
+    background: inherit;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#lastName {
+    background: inherit;
+    color: #1e84d9;
+    text-transform: uppercase;
+}
+
+.ico {
+    padding-right: 1em;
+    width: 30px;
+    height: 30px;
+    filter: invert(15%) sepia(99%) saturate(4298%) hue-rotate(269deg) brightness(71%) contrast(110%);
+}
+
+#portrait {
+    padding-left: 0.8rem;
+    width: 80%;
+    padding-bottom: 1rem;
+    border-radius: 100%;
+    padding-top: 1rem;
+}
+
+li:hover {
+    background: rgba(35, 155, 255, 0.6);
+    cursor: pointer;
+}
+
+
+#menuLinks {
+    padding: 0;
+}
+
+
+.content {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1090px;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#name {
+    font-size: 6em;
+    text-transform: uppercase;
+    font-family: 'Roboto Light', sans-serif;
+    margin: 0;
+}
+
+
+.social {
+    width: 50px;
+    padding: 1rem;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+.content p {
+    font-size: 1.3em;
+}
+
+#instagram:hover {
+    filter: invert(34%) sepia(100%) saturate(7486%) hue-rotate(275deg) brightness(94%) contrast(122%);
+}
+
+#twitter:hover {
+    filter: invert(70%) sepia(66%) saturate(4490%) hue-rotate(159deg) brightness(100%) contrast(107%);
+}
+
+#fb:hover {
+    filter: invert(32%) sepia(22%) saturate(1406%) hue-rotate(182deg) brightness(97%) contrast(90%);
+}
+
+#linked:hover {
+    filter: invert(24%) sepia(99%) saturate(4070%) hue-rotate(194deg) brightness(93%) contrast(98%);
+}
+
+#github:hover {
+    filter: invert(17%) sepia(9%) saturate(2%) hue-rotate(52deg) brightness(92%) contrast(87%);
+}
+
+#bars {
+    height: 25vw;
+    display: none;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+#bars:hover {
+    cursor: pointer;
+}
+
+#responsive-nav {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>John | Doe</title>
+</head>
+<body>
+<!--<header id="myHeader">-->
+<!--    <h1> <mark id="firstName"> John </mark> <mark id="lastName">Doe</mark></h1>-->
+<!--</header>-->
+
+<div id="main">
+
+    <nav>
+        <div id="responsive-nav">
+        <img alt="person" id="portrait" src="assets/man-1.jpg">
+        <img src="assets/bars-solid.svg" alt="bars" id="bars" onclick="show_nav()">
+        </div>
+        <ul id="menuLinks">
+            <li id="li_1"><a href="#about" onclick="activeNav('#li_1')"><div>About</div> <img
+                    alt="person" class="ico" src="assets/person-black-18dp.svg"></a></li>
+            <li id="li_2"><a href="#study" onclick="activeNav('#li_2')"><div>Study</div> <img alt="person"
+                                                                                       class="ico" src="assets/work-black-18dp.svg"></a></li>
+            <li id="li_3"><a href="#projects" onclick="activeNav('#li_3')"><div>Projects </div><img
+                    alt="person" class="ico" src="assets/code-black-18dp.svg"></a></li>
+            <li id="li_4"><a href="#examples" onclick="activeNav('#li_4')"><div>Examples</div> <img
+                    alt="person" class="ico" src="assets/check_circle_outline-black-18dp.svg"></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page" id="about">
+            <div class="content">
+                <h1 id="name">John <mark id="lastName">Doe</mark></h1>
+                <div>
+                    <img src="assets/facebook-brands.svg" alt="facebbok" class="social" id="fb">
+                    <img src="assets/twitter-brands.svg" alt="twitter" class="social" id="twitter">
+                    <img src="assets/linkedin-in-brands.svg" alt="linkedin" class="social" id="linked">
+                    <img src="assets/github-brands.svg" alt="github" class="social" id="github">
+                    <img src="assets/instagram-brands.svg" alt="insta" class="social" id="instagram">
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum
+                    eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga
+                    repudiandae.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum
+                    eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga
+                    repudiandae?</p>
+            </div>
+        </section>
+        <section class="page" id="study">
+            <div class="content">
+                <h1>My graduated studies</h1>
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="content-inside">
+                            <h2>2008</h2>
+                            <p>High school finished</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content-inside">
+                            <h2>2014</h2>
+                            <p>Finished University of Technology in Brno with Bachelor's degree</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content-inside">
+                            <h2>2016</h2>
+                            <p>Finished University of Technology in Brno with Master's degree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page" id="projects">
+            <div class="content">
+
+                <h1>My important projects</h1>
+                <p>Soluta quibusdam ad nostrum vel voluptate delectus sequi dolores quia quaerat officia corrupti,
+                    aperiam fugit facere debitis repudiandae praesentium sapiente inventore repellendus, nemo commodi
+                    alias!</p>
+            </div>
+        </section>
+        <section class="page" id="examples">
+            <div class="content">
+                <h1>TODO...</h1>
+                <p>Aliquid aliquam magnam ducimus similique obcaecati, unde exercitationem laborum incidunt, quas in
+                    ipsum inventore nostrum? Blanditiis optio cumque earum iste odio! Alias sint accusamus
+                    repudiandae.</p>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <h1>
+        Copyright
+    </h1>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>
