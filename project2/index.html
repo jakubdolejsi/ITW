@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>John | Doe</title>
 </head>
@@ -15,64 +15,95 @@
 
     <nav>
         <div id="responsive-nav">
-        <img alt="person" id="portrait" src="assets/man-1.jpg">
-        <img src="assets/bars-solid.svg" alt="bars" id="bars" onclick="show_nav()">
+            <img alt="person" id="portrait" src="assets/man-1.jpg">
+            <img alt="bars" id="bars" onclick="show_nav()" src="assets/bars-solid.svg">
         </div>
         <ul id="menuLinks">
-            <li id="li_1"><a href="#about" onclick="activeNav('#li_1')"><div>About</div> <img
-                    alt="person" class="ico" src="assets/person-black-18dp.svg"></a></li>
-            <li id="li_2"><a href="#study" onclick="activeNav('#li_2')"><div>Study</div> <img alt="person"
-                                                                                       class="ico" src="assets/work-black-18dp.svg"></a></li>
-            <li id="li_3"><a href="#projects" onclick="activeNav('#li_3')"><div>Projects </div><img
-                    alt="person" class="ico" src="assets/code-black-18dp.svg"></a></li>
-            <li id="li_4"><a href="#examples" onclick="activeNav('#li_4')"><div>Examples</div> <img
-                    alt="person" class="ico" src="assets/check_circle_outline-black-18dp.svg"></a></li>
+            <li id="li_1"><a class="" href="#about" onclick="activeNav('#li_1')">
+                <div class="nav-text">About Me</div>
+                <img
+                        alt="person" class="ico" src="assets/person-black-18dp.svg"></a>
+            </li>
+            <li id="li_2"><a href="#study" onclick="activeNav('#li_2')">
+                <div class="nav-text">Education</div>
+                <img alt="person"
+                     class="ico" src="assets/work-black-18dp.svg"></a>
+            </li>
+            <li id="li_3"><a href="#projects" onclick="activeNav('#li_3')">
+                <div class="nav-text">Experience</div>
+                <img
+                        alt="person" class="ico" src="assets/code-solid.svg"></a>
+            </li>
+            <li id="li_4"><a href="#examples" onclick="activeNav('#li_4')">
+                <div class="nav-text">Skills</div>
+                <img
+                        alt="person" class="ico" src="assets/atom-solid.svg"></a>
+            </li>
+            <li id="li_5"><a href="#interest" onclick="activeNav('#li_5')">
+                <div class="nav-text">Interests</div>
+                <img
+                        alt="person" class="ico" src="assets/heartbeat-solid.svg"></a>
+            </li>
         </ul>
     </nav>
 
     <main>
         <section class="page" id="about">
             <div class="content">
-                <h1 id="name">John <mark id="lastName">Doe</mark></h1>
+                <h1 id="name">John
+                    <mark id="lastName">Doe</mark>
+                </h1>
                 <div>
-                    <img src="assets/facebook-brands.svg" alt="facebbok" class="social" id="fb">
-                    <img src="assets/twitter-brands.svg" alt="twitter" class="social" id="twitter">
-                    <img src="assets/linkedin-in-brands.svg" alt="linkedin" class="social" id="linked">
-                    <img src="assets/github-brands.svg" alt="github" class="social" id="github">
-                    <img src="assets/instagram-brands.svg" alt="insta" class="social" id="instagram">
+                    <img alt="facebbok" class="social" id="fb" src="assets/facebook-brands.svg">
+                    <img alt="twitter" class="social" id="twitter" src="assets/twitter-brands.svg">
+                    <img alt="linkedin" class="social" id="linked" src="assets/linkedin-in-brands.svg">
+                    <img alt="github" class="social" id="github" src="assets/github-brands.svg">
+                    <img alt="insta" class="social" id="instagram" src="assets/instagram-brands.svg">
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum
                     eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga
-                    repudiandae.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum
+                    repudiandae.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita?
+                    Earum
                     eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga
                     repudiandae?</p>
             </div>
         </section>
-        <section class="page" id="study">
-            <div class="content">
+        <hr>
+
+        <section class="page " id="study">
+            <div class="content parallax">
                 <h1>My graduated studies</h1>
-                <div class="timeline">
-                    <div class="container left">
-                        <div class="content-inside">
-                            <h2>2008</h2>
-                            <p>High school finished</p>
-                        </div>
+                <div class="study">
+                    <h4>
+                        2008
+                    </h4>
+                    <div>
+                        Finished secondary technical school
                     </div>
-                    <div class="container right">
-                        <div class="content-inside">
-                            <h2>2014</h2>
-                            <p>Finished University of Technology in Brno with Bachelor's degree</p>
-                        </div>
+                    <hr>
+                </div>
+                <div class="study">
+                    <h4>
+                        2014
+                    </h4>
+                    <div>
+                        Finished University of Technology in Brno wth Bachelor's degree
                     </div>
-                    <div class="container right">
-                        <div class="content-inside">
-                            <h2>2016</h2>
-                            <p>Finished University of Technology in Brno with Master's degree</p>
-                        </div>
+                    <hr>
+                </div>
+                <div class="study">
+                    <h4>
+                        2016
+                    </h4>
+                    <div>
+                        Finished University of Technology in Brno wth Master's degree
                     </div>
+                    <hr>
                 </div>
             </div>
         </section>
+        <hr>
+
         <section class="page" id="projects">
             <div class="content">
 
@@ -82,12 +113,118 @@
                     alias!</p>
             </div>
         </section>
+        <hr>
         <section class="page" id="examples">
             <div class="content">
-                <h1>TODO...</h1>
-                <p>Aliquid aliquam magnam ducimus similique obcaecati, unde exercitationem laborum incidunt, quas in
-                    ipsum inventore nostrum? Blanditiis optio cumque earum iste odio! Alias sint accusamus
-                    repudiandae.</p>
+                <h1 id="skillH1">Skills</h1>
+                <div id="skills">
+
+                    <div class="skill" id="general">
+                        <h4>General</h4>
+                        <div class="contentContainer">
+                            <div class="progressBar">
+                                <h4>Unix & Linux</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-50"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>Networking</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-30"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>Docker</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-80"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>Scrum</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="backend">
+                        <h4>Backend</h4>
+                        <div class="contentContainer">
+                            <div class="progressBar">
+                                <h4>Python</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-90"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>Java</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-80"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>C / C++</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-70"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>C#</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-60"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>PHP</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill" id="frontend">
+                        <h4>Frontend</h4>
+                        <div class="contentContainer">
+                            <div class="progressBar">
+                                <h4>HTML5</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-70"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>CSS3</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-50"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>Vanilla Javascript</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-70"></div>
+                                </div>
+                            </div>
+                            <div class="progressBar">
+                                <h4>Any javascript framework</h4>
+                                <div class="progressBarContainer">
+                                    <div class="progressBarValue value-40"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="page" id="interest">
+            <div class="content">
+
+                <h1>My interests</h1>
+                <div>
+                    Soluta quibusdam ad nostrum vel voluptate delectus sequi dolores quia quaerat officia corrupti,
+                    aperiam fugit facere debitis repudiandae praesentium sapiente inventore repellendus, nemo commodi
+                    alias!
+                </div>
             </div>
         </section>
     </main>
@@ -98,6 +235,8 @@
         Copyright
     </h1>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>

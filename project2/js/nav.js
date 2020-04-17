@@ -7,16 +7,14 @@ function show_nav() {
     }
 }
 
-
 function activeNav(active_id) {
     let previous = document.querySelectorAll('.active');
-    let next_active = document.querySelectorAll(active_id)[0];
-    next_active.className = 'active';
-    next_active.childNodes[0].className = 'activeText';
+    // if(document.getElementById('bars').style.display === 'flex') {
+    //     document.getElementById('menuLinks').style.display = 'none';
+    // }
     try {
         previous[0].className = '';
         previous[0].childNodes[0].className = ''
     } catch (e) {
-
     }
 }
