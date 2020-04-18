@@ -1,7 +1,10 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+
+
 body {
     margin: 0;
     display: flex;
@@ -34,6 +37,12 @@ nav ul {
     }
 }
 @media screen and (min-width: 1000px){
+    html {
+        -ms-overflow-style: none;
+    }
+    html::-webkit-scrollbar {
+        display: none;
+    }
     #menuLinks {
         display: block!important;
     }
@@ -86,6 +95,9 @@ nav ul {
     #examples.page {
         height: 200vh;
     }
+    #projects.page {
+        height: 150vh;
+    }
 
 }
 nav ul li a {
@@ -121,8 +133,7 @@ footer {
 }
 
 .active {
-    background: #ebe5ff;
-    /*color: black!important;*/
+    background: rgba(206, 205, 204, 0.33);
 }
 
 .activeText {
@@ -273,6 +284,7 @@ li a:hover > .ico {
 }
 
 
+
 .nav-text {
     color: #2c3e50;
     font-weight: 300;
@@ -404,4 +416,47 @@ h1 {
 #interest .content div {
     font-weight: 300;
     font-size: 1.4rem;
+}
+
+.company {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.dropdown-content {
+
+    display: none;
+}
+
+.dropdown-content a {
+    transform: scale(1);
+    transition: 0.15s all ease;
+}
+.dropdown-content a:hover {
+    transform: scale(1.1);
+
+}
+#li_3:hover .dropdown-content {
+    display: block;
+}
+
+.company-text {
+    max-width: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#bar-container {
+    width: .7rem;
+}
+.vertical-progress-container {
+    width: .7rem;
+    height: 100%;
+    background:  #EBE5FF;
+}
+
+.vertical-progress-bar {
+    width: 0.7rem;
+    height: 0;
+    background: #1e84d9;
 }
